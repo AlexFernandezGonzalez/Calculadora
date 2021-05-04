@@ -1,12 +1,11 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.control;
+package br.marcos.calculadora.control;
 
-import br.uff.marcos.calculadora.model.Numero;
-import br.uff.marcos.calculadora.model.Pilha;
+import br.marcos.calculadora.model.Numero;
+import br.marcos.calculadora.model.Pilha;
 
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -24,9 +23,9 @@ public class ControleEntrada {
 		} else if (oper.indexOf("j") == oper.length() - 1 && oper.indexOf("j") != 0) {
 			oper = oper.substring(0, oper.length() - 1);
 			posc = oper.indexOf(" ");
-			if(posc>=0){
-			parteReal = oper.substring(0, posc);
-			}else{
+			if (posc >= 0) {
+				parteReal = oper.substring(0, posc);
+			} else {
 				parteReal = "0";
 			}
 			parteImg = oper.substring(posc + 1, oper.length());

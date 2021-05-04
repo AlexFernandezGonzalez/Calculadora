@@ -1,24 +1,23 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.view;
+package br.marcos.calculadora.view;
 
-import br.uff.marcos.calculadora.model.Numero;
-import br.uff.marcos.calculadora.model.Pilha;
-import br.uff.marcos.calculadora.control.ControleClear;
-import br.uff.marcos.calculadora.control.ControleDel;
-import br.uff.marcos.calculadora.control.ControleDelMemoria;
-import br.uff.marcos.calculadora.control.ControleDelMemoria2;
-import br.uff.marcos.calculadora.control.ControleDiv;
-import br.uff.marcos.calculadora.control.ControleEnter;
-import br.uff.marcos.calculadora.control.ControleExp;
-import br.uff.marcos.calculadora.control.ControleModulo;
-import br.uff.marcos.calculadora.control.ControleMult;
-import br.uff.marcos.calculadora.control.ControleNums;
-import br.uff.marcos.calculadora.control.ControleSoma;
-import br.uff.marcos.calculadora.control.ControleSub;
+import br.marcos.calculadora.model.Numero;
+import br.marcos.calculadora.model.Pilha;
+import br.marcos.calculadora.control.ControleClear;
+import br.marcos.calculadora.control.ControleDel;
+import br.marcos.calculadora.control.ControleDelMemoria;
+import br.marcos.calculadora.control.ControleDelMemoria2;
+import br.marcos.calculadora.control.ControleDiv;
+import br.marcos.calculadora.control.ControleEnter;
+import br.marcos.calculadora.control.ControleExp;
+import br.marcos.calculadora.control.ControleModulo;
+import br.marcos.calculadora.control.ControleMult;
+import br.marcos.calculadora.control.ControleNums;
+import br.marcos.calculadora.control.ControleSoma;
+import br.marcos.calculadora.control.ControleSub;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

@@ -1,28 +1,29 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.control;
+package br.marcos.calculadora.control;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 
-public class ControleNums implements ActionListener {
+public class ControleDel implements ActionListener {
 
-	private char numero = 0;
+	private int tam = 0;
 	private JTextField painelP;
 	private String guarda = "";
 
-	public ControleNums(JTextField visorP, char numero) {
+	public ControleDel(JTextField visorP) {
 		this.painelP = visorP;
-		this.numero = numero;
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		guarda = painelP.getText();
-		painelP.setText(guarda + numero);
+		tam = guarda.length();
+		if (tam > 0) {
+			painelP.setText(guarda.substring(0, tam - 1));
+		}
 	}
 }

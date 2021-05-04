@@ -1,13 +1,12 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.control;
+package br.marcos.calculadora.control;
 
-import br.uff.marcos.calculadora.model.Conta;
-import br.uff.marcos.calculadora.model.Numero;
-import br.uff.marcos.calculadora.model.Pilha;
+import br.marcos.calculadora.model.Conta;
+import br.marcos.calculadora.model.Numero;
+import br.marcos.calculadora.model.Pilha;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -38,7 +37,7 @@ public class ControleSoma implements ActionListener {
 			if (guarda.charAt(tam - 1) == ' ') {
 				painelP.setText(guarda + "+");
 				foi = true;
-			}else{
+			} else {
 				ControleEntrada.pegaValor(memoria, painelP, painelG);
 			}
 		}

@@ -1,11 +1,10 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.control;
+package br.marcos.calculadora.control;
 
-import br.uff.marcos.calculadora.model.Pilha;
+import br.marcos.calculadora.model.Pilha;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,7 +27,7 @@ public class ControleDelMemoria2 implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		guarda = painelP.getText();
-		if (guarda.indexOf("Apagar")>=0) {
+		if (guarda.indexOf("Apagar") >= 0) {
 			memoria.clear();
 			painelG.setText("Memória apagada.");
 			painelP.setText("");

@@ -1,9 +1,8 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.model;
+package br.marcos.calculadora.model;
 
 public class Numero {
 	private double num = 0;

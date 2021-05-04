@@ -1,20 +1,19 @@
-//MARCOS MADEIRA//
+//MARCOS V////////
 /////////////////0 0
-/// PROJETO ////  -
-///////////////
+////////////////  -
 
-package br.uff.marcos.calculadora.control;
+package br.marcos.calculadora.control;
 
-import br.uff.marcos.calculadora.model.Conta;
-import br.uff.marcos.calculadora.model.Numero;
-import br.uff.marcos.calculadora.model.Pilha;
+import br.marcos.calculadora.model.Conta;
+import br.marcos.calculadora.model.Numero;
+import br.marcos.calculadora.model.Pilha;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class ControleModulo implements ActionListener {
+public class ControleExp implements ActionListener {
 
 	private int tam = 1;
 	private String guarda = "";
@@ -23,7 +22,7 @@ public class ControleModulo implements ActionListener {
 	private JTextField painelP;
 	private Numero numc;
 
-	public ControleModulo(Pilha memoria, JTextField visorP, JTextArea visorG) {
+	public ControleExp(Pilha memoria, JTextField visorP, JTextArea visorG) {
 		this.memoria = memoria;
 		this.painelP = visorP;
 		this.painelG = visorG;
@@ -36,7 +35,7 @@ public class ControleModulo implements ActionListener {
 		if (tam > 0) {
 			ControleEntrada.pegaValor(memoria, painelP, painelG);
 		}
-		numc = Conta.modulo(memoria);
+		numc = Conta.exponencial(memoria);
 		if (numc != null) {
 			painelP.setText("");
 			Pilha.imprimePilha(memoria, painelG);
